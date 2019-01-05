@@ -44,6 +44,9 @@ extractPrice('extracts currency codes EUR 1.00, 2.00 USD');
 extractPrice('extracts currency symbols €1.00, 2.00$');
 // [{amount: 100, currencySymbol: '€'}, {amount: 200, currencySymbol: '$'}]
 
+extractPrice('does not100 100.20extract ambig0u0s numbers as price');
+// []
+
 ```
 
 <a name="extract-price-related-projects"></a>
