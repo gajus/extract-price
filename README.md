@@ -1,5 +1,5 @@
 <a name="extract-price"></a>
-# extract-price 💲
+# extract-price 🤑
 
 [![Travis build status](http://img.shields.io/travis/gajus/extract-price/master.svg?style=flat-square)](https://travis-ci.org/gajus/extract-price)
 [![Coveralls](https://img.shields.io/coveralls/gajus/extract-price.svg?style=flat-square)](https://coveralls.io/github/gajus/extract-price)
@@ -9,7 +9,7 @@
 
 Extracts price from an arbitrary text input.
 
-* [extract-price 💲](#extract-price)
+* [extract-price 🤑](#extract-price)
     * [Usage](#extract-price-usage)
     * [Related projects](#extract-price-related-projects)
 
