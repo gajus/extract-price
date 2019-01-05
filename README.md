@@ -11,6 +11,8 @@ Extracts price from an arbitrary text input.
 
 * [extract-price 🤑](#extract-price)
     * [Usage](#extract-price-usage)
+    * [FAQ](#extract-price-faq)
+        * [What is the reason the price amount is returned in cents?](#extract-price-faq-what-is-the-reason-the-price-amount-is-returned-in-cents)
     * [Related projects](#extract-price-related-projects)
 
 
@@ -48,6 +50,22 @@ extractPrice('does not100 100.20extract ambig0u0s numbers as price');
 // []
 
 ```
+
+<a name="extract-price-faq"></a>
+## FAQ
+
+<a name="extract-price-faq-what-is-the-reason-the-price-amount-is-returned-in-cents"></a>
+### What is the reason the price amount is returned in cents?
+
+Because:
+
+```
+> 1.03 - 0.42
+< 0.6100000000000001
+
+```
+
+See: https://stackoverflow.com/q/3730019/368691
 
 <a name="extract-price-related-projects"></a>
 ## Related projects
