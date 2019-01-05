@@ -18,8 +18,8 @@ export default (rules: $ReadOnlyArray<RegExp>, subject: string): MatchType | nul
         smallestIndex = maybeMatch.index;
         longestMatch = maybeMatch[0].length;
         maybeLongestLowestMatch = {
-          index: maybeMatch.index,
-          match: maybeMatch[0]
+          index: maybeMatch.index + subject.slice(maybeMatch.index).indexOf(maybeMatch[1]),
+          match: maybeMatch[1]
         };
       }
     }

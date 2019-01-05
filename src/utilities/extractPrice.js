@@ -16,9 +16,9 @@ export default (subject: string): $ReadOnlyArray<PriceMatchType> => {
   const normalizedSubject = normalizeInput(subject);
 
   const formats = [
-    /(\d{1,3}(?:,\d{3})*(?:\.\d{2}))/,
-    /(\d{1,3}(?:\.\d{3})*(?:,\d{2}))/,
-    /(\d+)/
+    /(?:^|\s)(?:\$|£|€|USD|EUR|GBP)?(\d{1,3}(?:,\d{3})*(?:\.\d{2}))(?:\$|£|€|USD|EUR|GBP)?(?:\s|$|, |\. )/,
+    /(?:^|\s)(?:\$|£|€|USD|EUR|GBP)?(\d{1,3}(?:\.\d{3})*(?:,\d{2}))(?:\$|£|€|USD|EUR|GBP)?(?:\s|$|, |\. )/,
+    /(?:^|\s)(?:\$|£|€|USD|EUR|GBP)?(\d+)(?:\$|£|€|USD|EUR|GBP)?(?:\s|$|, |\. )/
   ];
 
   const matches = [];
