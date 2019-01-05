@@ -36,7 +36,7 @@ extractPrice('and space followed by "." notation 1 222 333.50');
 // [{amount: 122233350}]
 
 extractPrice('extracts multiple prices listed anywhere within the string using different formats: 1,22, 222, 3,22, 4.20, 5.666');
-// [{amount: 12200}, {amount: 22200}, {amount: 322}, {amount: 422}, {566600}]
+// [{amount: 12200}, {amount: 22200}, {amount: 322}, {amount: 422}, {amount: 566600}]
 
 extractPrice('extracts currency codes EUR 1.00, 2.00 USD');
 // [{amount: 100, currencyCode: 'EUR'}, {amount: 200, currencyCode: 'USD'}]
