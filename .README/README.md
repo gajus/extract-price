@@ -44,6 +44,20 @@ extractPrice('does not100 100.20extract ambig0u0s numbers as price');
 
 ```
 
+## FAQ
+
+### What is the reason the price amount is returned in cents?
+
+Because:
+
+```
+> 1.03 - 0.42
+< 0.6100000000000001
+
+```
+
+See: https://stackoverflow.com/q/3730019/368691
+
 ## Related projects
 
 * [`extract-date`](https://github.com/gajus/extract-date) – Extracts date from an arbitrary text input.
